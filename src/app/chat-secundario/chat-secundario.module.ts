@@ -10,6 +10,7 @@ import { DatosService } from '../datos/datos-servicio/datos.service';
     CommonModule
   ],
   declarations: [ChatSecundarioComponent, InputMensajeComponent, MensajesComponent],
-  providers: [DatosService]
+  providers: [DatosService],
+  exports: [ChatSecundarioComponent]
 })
 export class ChatSecundarioModule { }
