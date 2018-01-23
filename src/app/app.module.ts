@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { ChatPrincipalModule } from './chat-principal/chat-principal.module';
+import { ChatSecundarioModule } from './chat-secundario/chat-secundario.module';
 
 
 @NgModule({
@@ -10,7 +12,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ChatPrincipalModule,
+    ChatSecundarioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
