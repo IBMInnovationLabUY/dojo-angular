@@ -6,6 +6,7 @@ import { DatosService } from './datos-servicio/datos.service';
   imports: [
     CommonModule
   ],
-  declarations: [DatosService]
+  declarations: [],
+  providers: [DatosService]
 })
 export class DatosModule { }
