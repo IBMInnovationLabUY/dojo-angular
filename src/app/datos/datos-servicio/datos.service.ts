@@ -11,7 +11,7 @@ export class DatosService {
   constructor() { 
 
     // Inicializamos el array desde el constructor con datos de prueba
-    this.mensajes = [ //
+    this.mensajes = [ 
       {
         emisor: 'chat-secundario',
         texto: 'Hola soy un texto de prueba del chat secundario'  
@@ -28,7 +28,7 @@ export class DatosService {
   }
 
 
-  
+
   //Retornamos el array de mensajes
   getMensajes(){
     return this.mensajes;
