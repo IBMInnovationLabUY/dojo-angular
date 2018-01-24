@@ -1,3 +1,8 @@
-<p>
-  mensajes works!
-</p>
+<div class="mensaje">
+  <div *ngFor="let mensaje of mensajes">
+    <span>{{ mensaje.emisor }}</span>
+    <br>
+    <span>{{ mensaje.texto }}</span>
+    <br>
+  </div>
+</div>
