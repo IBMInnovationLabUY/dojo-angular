@@ -54,5 +54,5 @@ export class MensajesComponent implements OnInit {
 
     return clase;
   }
-
 }
+
