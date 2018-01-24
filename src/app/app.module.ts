@@ -5,7 +5,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ChatPrincipalModule } from './chat-principal/chat-principal.module';
 import { ChatSecundarioModule } from './chat-secundario/chat-secundario.module';
-import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,8 +14,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     ChatPrincipalModule,
-    ChatSecundarioModule,
-    FormsModule
+    ChatSecundarioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
