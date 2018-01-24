@@ -40,4 +40,16 @@ export class MensajesComponent implements OnInit {
     return mensajeSecundario;
   }
 
+  getClass(emisor: string): string{
+    let clase: string = '';
+    if(emisor === 'chat-secundario'){
+      clase = 'mensaje-secundario';
+    }
+    else if(emisor === 'chat-principal'){
+      clase = 'mensaje-principal';
+    }
+
+    return clase;
+  }
+
 }
