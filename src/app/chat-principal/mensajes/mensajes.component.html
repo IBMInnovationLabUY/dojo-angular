@@ -1,6 +1,5 @@
 <div class="mensaje">
   <div *ngFor="let mensaje of mensajes">
-    <br>
     <span *ngIf="mostrarNombre(mensaje.emisor)" 
     [ngStyle]="{'backgroundColor' : getColor(mensaje.emisor)}">{{ mensaje.emisor }}</span>
     <br>
