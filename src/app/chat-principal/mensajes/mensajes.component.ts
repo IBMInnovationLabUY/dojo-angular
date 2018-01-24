@@ -32,4 +32,12 @@ export class MensajesComponent implements OnInit {
     return color;
   }
 
+  mostrarNombre(emisor: string): boolean{
+    let mensajeSecundario: boolean = false;
+    if(emisor === 'chat-secundario'){
+      mensajeSecundario = true;
+    }
+    return mensajeSecundario;
+  }
+
 }
