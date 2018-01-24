@@ -1,3 +1,4 @@
-<p>
-  input-mensaje works!
-</p>
+<div class="zona-input-mensaje">
+<input type="text" [(ngModel)]="mensaje.texto" (keyup.enter)="enviarMensaje()">
+<button (click)="enviarMensaje()">Enviar</button>
+</div>
