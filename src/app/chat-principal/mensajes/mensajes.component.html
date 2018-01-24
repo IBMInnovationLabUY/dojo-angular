@@ -1,9 +1,11 @@
 <div class="mensaje">
   <div *ngFor="let mensaje of mensajes">
-    <br>
-    <span>{{ mensaje.emisor }}</span>
-    <br>
-    <span>{{ mensaje.texto }}</span>
-    <br>
+    <div [ngStyle]="{'backgroundColor' : getColor(mensaje.emisor)}">
+      <br>
+      <span>{{ mensaje.emisor }}</span>
+      <br>
+      <span>{{ mensaje.texto }}</span>
+      <br>
+  </div>
   </div>
 </div>

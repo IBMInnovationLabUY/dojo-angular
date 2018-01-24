@@ -20,4 +20,16 @@ export class MensajesComponent implements OnInit {
     this.mensajes = this.datosService.getMensajes();
   }
 
+  getColor(emisor: string): string{
+    let color: string = '';
+    if(emisor === 'chat-secundario'){
+      color = 'blue';
+    }
+    else if(emisor === 'chat-principal'){
+      color = 'green';
+    }
+
+    return color;
+  }
+
 }
