@@ -7,9 +7,6 @@ import { DatosService } from '../../datos/datos-servicio/datos.service';
   template: `
   <div class="mensaje">
     <div *ngFor="let mensaje of mensajes">
-      <span *ngIf="mostrarNombre(mensaje.emisor)" 
-      [ngClass]="getClass(mensaje.emisor)">{{ mensaje.emisor }}</span>
-      <br>
       <span [ngClass]="getClass(mensaje.emisor)">{{ mensaje.texto }}</span>
       <br>
     </div>
