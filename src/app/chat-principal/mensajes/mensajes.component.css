@@ -3,11 +3,9 @@
 }
 
 .mensaje-principal{
-    background-color: green;
     float: right;
 }
 
 .mensaje-secundario{
-    background-color: blue;
     float: left;
 }
