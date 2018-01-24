@@ -4,10 +4,12 @@ import { ChatPrincipalComponent } from './chat-principal/chat-principal.componen
 import { InputMensajeComponent } from './input-mensaje/input-mensaje.component';
 import { MensajesComponent } from './mensajes/mensajes.component';
 import { DatosService } from '../datos/datos-servicio/datos.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   declarations: [ChatPrincipalComponent, InputMensajeComponent, MensajesComponent],
   providers: [DatosService],
