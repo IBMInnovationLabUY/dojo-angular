@@ -33,11 +33,11 @@ export class MensajesComponent implements OnInit {
   }
 
   mostrarNombre(emisor: string): boolean{
-    let mensajeSecundario: boolean = false;
+    let mensajePrincipal: boolean = false;
     if(emisor === 'chat-secundario'){
-      mensajeSecundario = true;
+      mensajePrincipal = true;
     }
-    return mensajeSecundario;
+    return mensajePrincipal;
   }
 
   getClass(emisor: string): string{
