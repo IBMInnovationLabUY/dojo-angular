@@ -1,0 +1,5 @@
+---
+applications:
+ - name: Dos-Chats-App
+   random-route: true
+   memory: 500M
