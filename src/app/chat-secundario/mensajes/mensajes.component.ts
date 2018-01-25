@@ -5,7 +5,7 @@ import { DatosService } from '../../datos/datos-servicio/datos.service';
 @Component({
   selector: 'app-mensajes',
   template: `
-  <div class="mensaje">
+  <div class="container">
     <div *ngFor="let mensaje of mensajes">
       <br>
       <span [ngClass]="getClass(mensaje.emisor)">{{ mensaje.texto }}</span>

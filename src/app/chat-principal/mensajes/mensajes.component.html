@@ -1,4 +1,4 @@
-<div class="mensaje">
+<div class="container-fluid">
   <div *ngFor="let mensaje of mensajes">
     <span *ngIf="mostrarNombre(mensaje.emisor)" 
     [ngClass]="getClass(mensaje.emisor)">{{ mensaje.emisor }}</span>
