@@ -1,4 +1,4 @@
 <div class="zona-input-mensaje">
-<input type="text" [(ngModel)]="mensaje.texto" (keyup.enter)="enviarMensaje()">
-<button (click)="enviarMensaje()">Enviar</button>
+<input type="text" class="form-control" placeholder="Escribe" [(ngModel)]="mensaje.texto" (keyup.enter)="enviarMensaje()">
+<button class="btn btn-primary" (click)="enviarMensaje()">Enviar</button>
 </div>

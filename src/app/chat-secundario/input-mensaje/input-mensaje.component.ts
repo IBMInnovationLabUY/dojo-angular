@@ -6,8 +6,15 @@ import { Mensaje } from '../../datos/datos-modelo/datos.model';
   selector: 'app-input-mensaje',
   template: `
     <div class="zona-input-mensaje">
-      <input type="text" [(ngModel)]="mensaje.texto" (keyup.enter)="enviarMensaje()">
-      <button (click)="enviarMensaje()">Enviar</button>
+
+      <input type="text" class="form-control" 
+      placeholder="Escribe"
+      [(ngModel)]="mensaje.texto" 
+      (keyup.enter)="enviarMensaje()">
+
+      <button (click)="enviarMensaje()"
+      class="btn btn-primary">Enviar</button>
+      
     </div>
   `,
   styleUrls: ['./input-mensaje.component.css']
