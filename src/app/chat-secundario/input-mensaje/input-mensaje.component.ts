@@ -5,16 +5,17 @@ import { Mensaje } from '../../datos/datos-modelo/datos.model';
 @Component({
   selector: 'app-input-mensaje',
   template: `
-    <div class="zona-input-mensaje">
-
-      <input type="text" class="form-control" 
-      placeholder="Escribe"
-      [(ngModel)]="mensaje.texto" 
-      (keyup.enter)="enviarMensaje()">
-
-      <button (click)="enviarMensaje()"
-      class="btn btn-primary">Enviar</button>
-      
+  <div class="form-row">
+    <div class="col-auto">
+        <input type="text" class="form-control form-control-sm" 
+        placeholder="Escribe"
+        [(ngModel)]="mensaje.texto" 
+        (keyup.enter)="enviarMensaje()">
+    </div>
+    <div class="col-auto">
+        <button (click)="enviarMensaje()"
+        class="btn btn-primary">Enviar</button>
+    </div>
     </div>
   `,
   styleUrls: ['./input-mensaje.component.css']
