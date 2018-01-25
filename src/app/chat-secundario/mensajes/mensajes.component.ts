@@ -7,7 +7,6 @@ import { DatosService } from '../../datos/datos-servicio/datos.service';
   template: `
   <div class="container">
     <div *ngFor="let mensaje of mensajes">
-      <br>
       <span [ngClass]="getClass(mensaje.emisor)">{{ mensaje.texto }}</span>
       <br>
     </div>
@@ -17,11 +16,9 @@ import { DatosService } from '../../datos/datos-servicio/datos.service';
       width: 40%;
   }
   .mensaje-principal{
-      background-color: green;
       float: left;
   }
   .mensaje-secundario{
-      background-color: blue;
       float: right;
 }`]
 })
@@ -43,13 +40,13 @@ export class MensajesComponent implements OnInit {
     return mensajeSecundario;
   }
 
-  getClass(emisor: string): string{
-    let clase: string = '';
+  getClass(emisor: string): Array<string>{
+    let clase: Array<string> = [];
     if(emisor === 'chat-secundario'){
-      clase = 'mensaje-secundario';
+      clase.push('badge badge-primary','mensaje-secundario');
     }
     else if(emisor === 'chat-principal'){
-      clase = 'mensaje-principal';
+      clase.push('badge badge-success','mensaje-principal');
     }
 
     return clase;
