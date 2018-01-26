@@ -6,7 +6,7 @@ export class DatosService {
 
   /*  Creamos un array de mensajes, donde
       guardaremos todos los mensajes enviados por los chats. */
-  mensajes: Mensaje[]; 
+  private mensajes: Mensaje[]; 
   
 
   constructor() { 
@@ -30,9 +30,9 @@ export class DatosService {
 
 
   //Retornamos el array de mensajes
-  /*getMensajes(){
+  getMensajes(){
     return this.mensajes;
-  }*/
+  }
 
   //Recibimos un mensaje y lo agregamos al array
   agregarMensajes(mensaje: Mensaje){
