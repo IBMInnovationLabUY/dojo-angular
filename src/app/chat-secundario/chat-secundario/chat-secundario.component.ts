@@ -18,7 +18,7 @@ export class ChatSecundarioComponent implements OnInit {
   mostrarVentana(){
     this.muestroVentana = !this.muestroVentana;
     if(this.chatS === 'Ocultar'){
-      this.chatS = 'Chat';
+      this.chatS = 'Abrir';
     }
     else{
       this.chatS = 'Ocultar';
