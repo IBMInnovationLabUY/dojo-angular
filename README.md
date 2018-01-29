@@ -9,7 +9,7 @@
 3. Instalar [angular-cli](https://github.com/angular/angular-cli)
 
   ```
-  npm install -g angular-cli
+  npm install -g @angular/cli
   ```
 
 4. Instalar las dependencias del proyecto
