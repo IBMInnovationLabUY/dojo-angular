@@ -40,13 +40,24 @@ export class MensajesComponent implements OnInit {
     return mensajePrincipal;
   }
 
-  getClass(emisor: string): string{
+  getClassRow(emisor: string): string{
     let clase: string = '';
     if(emisor === 'chat-secundario'){
-      clase = 'alert alert-primary';
+      clase = 'd-flex flex-row';
     }
     else if(emisor === 'chat-principal'){
-      clase = 'alert alert-success';
+      clase = 'd-flex flex-row-reverse';
+    }
+
+    return clase;
+  }
+  getClassColor(emisor: string): string{
+    let clase: string = '';
+    if(emisor === 'chat-secundario'){
+      clase = 'p-2 alert alert-primary';
+    }
+    else if(emisor === 'chat-principal'){
+      clase = 'p-2 alert alert-success';
     }
 
     return clase;

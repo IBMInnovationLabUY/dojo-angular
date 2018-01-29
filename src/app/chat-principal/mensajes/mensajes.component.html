@@ -1,9 +1,11 @@
 <div class="container-fluid">
   <div *ngFor="let mensaje of mensajes">
-    <div [ngClass]="getClass(mensaje.emisor)">
-      <span *ngIf="mostrarNombre(mensaje.emisor)" >{{ mensaje.emisor }}</span>
-      <hr *ngIf="mostrarNombre(mensaje.emisor)">
-      <span>{{ mensaje.texto }}</span>
+    <div [ngClass]="getClassRow(mensaje.emisor)">
+    <div [ngClass]="getClassColor(mensaje.emisor)">
+        <span *ngIf="mostrarNombre(mensaje.emisor)" >{{ mensaje.emisor }}</span>
+        <hr *ngIf="mostrarNombre(mensaje.emisor)">
+        <span>{{ mensaje.texto }}</span>
+    </div> 
     </div>
     <br>
   </div>
