@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatSecundarioComponent implements OnInit {
 
+  muestroVentana: boolean = false;
+  chatS: string = 'Ocultar';
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  mostrarVentana(){
+    this.muestroVentana = !this.muestroVentana;
+    if(this.chatS === 'Ocultar'){
+      this.chatS = 'Chat';
+    }
+    else{
+      this.chatS = 'Ocultar';
+    }
+  }
 }

@@ -1,7 +1,24 @@
 <div class="container">
-    <div class="w-30 p-3 mb-2 bg-light text-dark"
-    style="position: fixed;right: 0;bottom: 10%;z-index:9999">
-        <app-mensajes></app-mensajes>
-        <app-input-mensaje></app-input-mensaje>
+   
+    <div class="rounded-left w-30 h-50 p-3 mb-2 bg-light text-dark"
+    style="position: fixed;right: 0;bottom: 10%;z-index:9999; overflow:auto;">
+
+        <div class="d-flex flex-row-reverse">
+            <button type="button" (click)="mostrarVentana()" class="p-2 btn btn-outline-info btn-sm">{{ chatS }}</button>
+        </div>
+
+        <div [hidden]="muestroVentana">
+                <hr>
+                <div class="d-flex flex-column" >
+                    <div class="p-2">
+                        <app-mensajes></app-mensajes>
+                    </div>
+                    <div class="p-2">
+                        <app-input-mensaje></app-input-mensaje>
+                    </div>
+                </div>
+        </div>
+        
+        
     </div>
 </div>
