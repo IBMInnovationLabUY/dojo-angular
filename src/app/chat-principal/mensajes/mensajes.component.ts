@@ -43,10 +43,10 @@ export class MensajesComponent implements OnInit {
   getClass(emisor: string): string{
     let clase: string = '';
     if(emisor === 'chat-secundario'){
-      clase = 'mensaje-secundario';
+      clase = 'alert alert-primary';
     }
     else if(emisor === 'chat-principal'){
-      clase = 'mensaje-principal';
+      clase = 'alert alert-success';
     }
 
     return clase;

@@ -1,10 +1,5 @@
 <div class="container">
-    <div class="form-row">
-        <div class="col">
+        <nav class="navbar fixed-bottom navbar-light bg-light">
             <input type="text" class="form-control" placeholder="Escribe" [(ngModel)]="mensaje.texto" (keyup.enter)="enviarMensaje()">
-        </div>
-        <div class="col">
-            <button class="btn btn-primary" (click)="enviarMensaje()">Enviar</button>
-        </div>
-    </div>
+        </nav>
 </div>

@@ -8,14 +8,14 @@ import { Mensaje } from '../../datos/datos-modelo/datos.model';
   <div class="container">
     <div class="form-row">
       <div class="col-auto">
-          <input type="text" class="form-control form-control-sm" 
+          <input type="text" class="form-control mr-sm-2" 
           placeholder="Escribe"
           [(ngModel)]="mensaje.texto" 
           (keyup.enter)="enviarMensaje()">
       </div>
       <div class="col-auto">
           <button (click)="enviarMensaje()"
-          class="btn btn-primary">Enviar</button>
+          class="btn btn-outline-success my-2 my-sm-0">Enviar</button>
       </div>
     </div>
   </div>
