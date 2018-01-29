@@ -11,16 +11,7 @@ import { DatosService } from '../../datos/datos-servicio/datos.service';
       <br>
     </div>
   </div>`,
-  styles: [`
-    .mensaje{
-      width: 40%;
-  }
-  .mensaje-principal{
-      float: left;
-  }
-  .mensaje-secundario{
-      float: right;
-}`]
+  styles: [``]
 })
 export class MensajesComponent implements OnInit {
 
@@ -43,10 +34,10 @@ export class MensajesComponent implements OnInit {
   getClass(emisor: string): Array<string>{
     let clase: Array<string> = [];
     if(emisor === 'chat-secundario'){
-      clase.push('badge badge-primary','mensaje-secundario');
+      clase.push('badge badge-primary float-right');
     }
     else if(emisor === 'chat-principal'){
-      clase.push('badge badge-success','mensaje-principal');
+      clase.push('badge badge-success float-left');
     }
 
     return clase;
